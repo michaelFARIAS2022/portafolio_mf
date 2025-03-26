@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#211C84;
+    --color-secundario:#B5A8D5;
+    --color-terciario:#4D55CC;
+    --color-hover: #7A73D1;
+
+
+    --fuente-montserrat:"Montserrat", sans-serif;
+    --fuente-krona: "krona one",sans-serif;
+
+}
+
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color:var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing:border-box;
+}
+.header{
+padding: 2% 0% 0% 15%;
+}
+.header_menu{
+display:flex;
+gap: 80px;
+}
+.header_menu_link{
+    font-family:var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--color-terciario);
+    text-decoration: none;
+}
+
+
+
+
+.presentacion_de_la_persona{
+    display:flex;
+    align-items:center;
+    padding: 5% 15%; 
+    justify-content:space-between;
+    gap:82px;
+}
+
+.presentacion__contenido{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_del_contenido_titulo{
+    font-size:2.25rem;
+    font-family:var(--fuente-krona);
+}
+
+.Titulo-destacado{
+    color:var(--color-terciario);
+}
+
+.presentacion_contenido_texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items:center;
+    gap: 32px;
+}
+.presentacion__enlaces__subtitulos{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion__enlaces_link{
+display: flex;
+justify-content: center;
+gap: 16px;
+border: 2px solid var(--color-terciario);
+width: 50%;
+text-align:center;
+padding:21.5px 0;
+border-radius:8px;
+font-family: var(--fuente-montserrat);
+font-size:1.5rem;
+font-weight:600;
+text-decoration: none;
+color:var(--color-secundario);
+}
+
+.presentacion__enlaces_link:hover{
+    background-color: var(--color-hover);
+}
+
+.presentacion_imagen{
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color:var(--color-primario);
+    text-align: center;
+    font-family:var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+    .presentacion_de_la_persona{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion__contenido{
+        width: auto;
+    }
+}
+
